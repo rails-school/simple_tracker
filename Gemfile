@@ -13,6 +13,7 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'high_voltage'
 gem 'slim-rails'
+gem 'simple_form'
 gem 'thin'
 group :development do
   gem 'better_errors'
