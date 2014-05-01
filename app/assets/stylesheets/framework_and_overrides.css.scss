@@ -49,3 +49,12 @@ section {
   @extend .row;
   margin-top: 20px;
   }
+
+.checkbox input[type="checkbox"] {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+label.required abbr {
+  color: red;
+}

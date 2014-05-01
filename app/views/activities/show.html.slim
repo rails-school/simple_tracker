@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @activity.name
+p
+  strong Category:
+  = @activity.category.name
+p
+  strong Description:
+  = @activity.description
+p
+  strong Is completed:
+  = @activity.is_completed
+p
+  strong Completed at:
+  = @activity.completed_at
+
+= link_to 'Edit', edit_activity_path(@activity)
+'|
+= link_to 'Back', activities_path

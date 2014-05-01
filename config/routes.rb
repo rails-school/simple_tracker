@@ -1,3 +1,7 @@
 SimpleTracker::Application.routes.draw do
-  root :to => 'visitors#new'
+  resources :categories
+
+  resources :activities
+
+  root :to => 'activities#index'
 end

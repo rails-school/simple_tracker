@@ -1,0 +1,12 @@
+= simple_form_for(@activity) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.association :category
+    = f.input :description, placeholder: 'What is the activity?', wrapper_html: { class: 'description' }
+    = f.input :is_completed, label: 'Completed?'
+    = f.input :completed_at, as: :html5date
+
+  .form-actions
+    = f.button :submit
