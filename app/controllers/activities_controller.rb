@@ -30,9 +30,11 @@ class ActivitiesController < ApplicationController
       if @activity.save
         format.html { redirect_to @activity, notice: 'Activity was successfully created.' }
         format.json { render :show, status: :created, location: @activity }
+        format.js   { render :show }
       else
         format.html { render :new }
         format.json { render json: @activity.errors, status: :unprocessable_entity }
+        format.js   { render :show }
       end
     end
   end

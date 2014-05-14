@@ -1,0 +1,8 @@
+tr
+  td = activity.name
+  td = activity.description
+  td = activity.is_completed
+  td = activity.completed_at
+  td = link_to 'Show', activity
+  td = link_to 'Edit', edit_activity_path(activity)
+  td = link_to 'Destroy', activity, data: {:confirm => 'Are you sure?'}, :method => :delete
